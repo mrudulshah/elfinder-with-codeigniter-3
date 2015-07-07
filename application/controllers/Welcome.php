@@ -15,6 +15,7 @@ class Welcome extends CI_Controller {
 	
     function elfinder_init()
 	{
+		$this->load->helper('general_helper');
 		$opts = initialize_elfinder();
 	  	$this->load->library('elfinder_lib', $opts);
 	}
